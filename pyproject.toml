@@ -1,0 +1,16 @@
+[project]
+name = "ups-rs232-get-collector"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jinja2>=3.1.6",
+    "openpyxl>=3.1.5",
+    "pydantic>=2.13.4",
+    "pyserial>=3.5",
+    "tqdm>=4.67.3",
+]
+
+[tool.setuptools]
+packages = ["app"]
