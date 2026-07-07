@@ -29,5 +29,6 @@ Q6 = UPSNMC_Data_Fetching_Info(
     )
 
 
-# q6_warnings mapping app/alarm/_init_.py (ALARM_MAPPING)
-# system_state mapping app/ups_sys_state.py (SYS_STATE_ORDER_MAP)
+# q6_warnings mapping app/alarm/_init_.py (ALARM_MAPPING) # HEX
+# system_state mapping app/ups_sys_state.py (SYS_STATE_ORDER_MAP) # Not HEX !! Left Digit sys_state 
+# system_state ups_battery_state.py  # Not HEX !! Right Digit battery_state
