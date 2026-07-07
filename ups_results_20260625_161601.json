@@ -1,0 +1,190 @@
+[
+    {
+        "cmd": "AR?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "AT?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "BATS?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "BB?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "BF?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "BL?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "BM?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "BO?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "BPS",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "BT?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "BV?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "CU?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "EB?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "EF?",
+        "result": "(005 005\r"
+    },
+    {
+        "cmd": "EV?",
+        "result": "(010 010\r"
+    },
+    {
+        "cmd": "F",
+        "result": "#220.0 004 036.0 50.0\r"
+    },
+    {
+        "cmd": "FUNC?",
+        "result": "(00000039\r"
+    },
+    {
+        "cmd": "GR?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "IP?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "LM?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "LSARD01?",
+        "result": "(01 00003\r"
+    },
+    {
+        "cmd": "LSASD01?",
+        "result": "(01 99999\r"
+    },
+    {
+        "cmd": "LSOFF00?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "LSOFF01?",
+        "result": "(99999\r"
+    },
+    {
+        "cmd": "LSON00?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "LSON01?",
+        "result": "(99999\r"
+    },
+    {
+        "cmd": "PI",
+        "result": "(0F\r"
+    },
+    {
+        "cmd": "Q1",
+        "result": "(227.9 227.9 229.4 000 50.0 2.32 22.1 00000001\r"
+    },
+    {
+        "cmd": "Q4",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "Q6",
+        "result": "(228.5 ---.- ---.- 50.0 229.3 ---.- ---.- 50.0 000 --- --- 041.8 000.0 22.1 59940 100 80 00000000 00000000 11\r"
+    },
+    {
+        "cmd": "QF",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "QLSF?",
+        "result": "(1 1\r"
+    },
+    {
+        "cmd": "QLSS01?",
+        "result": "(01 1\r"
+    },
+    {
+        "cmd": "QOF",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "QP",
+        "result": "(45.0 55.0 187 264 EpbroaDkc\r"
+    },
+    {
+        "cmd": "RT",
+        "result": "(03.18 01.00 INN21RT1K                      1/1 1/1 220 50.00 003 12.0 01 01000\r"
+    },
+    {
+        "cmd": "SASV07?",
+        "result": "GASV07DCPKTR4138250002     \r"
+    },
+    {
+        "cmd": "SD?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "SF?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "SL?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "TC?",
+        "result": "(---.-\r"
+    },
+    {
+        "cmd": "TD?",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "V?",
+        "result": "(220\r"
+    },
+    {
+        "cmd": "WA",
+        "result": "(000.0 ---.- ---.- 000.0 ---.- ---.- 000.0 000.0 000.0 ---.- ---.- 000 00000001\r"
+    },
+    {
+        "cmd": "WC",
+        "result": "NAK\r"
+    },
+    {
+        "cmd": "WH",
+        "result": "(00 03.18 01.00 INN21RT1K                  1/1 6 220 50.00 003 02.00 004.00 011.30 004 00 50 187 264 45.00 55.00\r"
+    },
+    {
+        "cmd": "WM",
+        "result": "NAK\r"
+    }
+]

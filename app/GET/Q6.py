@@ -27,3 +27,7 @@ Q6 = UPSNMC_Data_Fetching_Info(
             UPSNMC_Reply_Data_Parse_Rules(key="q6_warnings", start_index=97, length=8, data_type="string")
         ]
     )
+
+
+# q6_warnings mapping app/alarm/_init_.py (ALARM_MAPPING)
+# system_state mapping app/ups_sys_state.py (SYS_STATE_ORDER_MAP)

@@ -12,6 +12,7 @@ import time
 from openpyxl import Workbook
 from datetime import datetime
 from app.utils.jinja2_extension import XTemplate
+import json
 import re
 from tqdm import tqdm
 
@@ -28,7 +29,7 @@ class UPS_RS232_COLLECTOR:
         
     def connect(self):
         self.serial_client = serial.Serial(
-            port = 'COM12',
+            port = 'COM21',
             baudrate = 2400,
             bytesize = 8,
             stopbits = 1,
@@ -143,6 +144,8 @@ class UPS_RS232_COLLECTOR:
             ws.title = "Raw Results"
             ws.append(["Command", "Result", "Response Time"])
         
+        json_data = []
+        
         print("Collecting data...")
         pbar = tqdm(self.collector_job, desc="Collecting", unit="cmd")
         for cmd in pbar:
@@ -153,6 +156,11 @@ class UPS_RS232_COLLECTOR:
             self.readings.append((job_info, result))
             if ws:
                 ws.append([job_info.cmd, result, response_time])
+            
+            json_data.append({
+                "cmd": job_info.cmd,
+                "result": result
+            })
                 
         parsed_result = self.parse_msg()
         
@@ -166,6 +174,11 @@ class UPS_RS232_COLLECTOR:
         filename = f"ups_results_{timestamp}.xlsx"
         wb.save(filename)
         print(f"Saved results to {filename}")
+        
+        json_filename = f"ups_results_{timestamp}.json"
+        with open(json_filename, "w", encoding="utf-8") as f:
+            json.dump(json_data, f, indent=4, ensure_ascii=False)
+        print(f"Saved JSON results to {json_filename}")
             
     def serial_job(self, job_info: 'UPSNMC_Data_Fetching_Info') -> 'tuple[str | None, UPSNMC_Data_Fetching_Info | None, float | None]':
         with self.serial_job_lock:
